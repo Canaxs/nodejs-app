@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const cors = require('cors')
 
-const blogsRouter = require('./controller/controlls')
+const modelRouter = require('./controller/controlls')
 const logger = require('./utils/Log')
 
 mongoose
@@ -24,6 +24,6 @@ app.use(cors())
 app.use(bodyParser.json({ limit: '30mb', extended: true }))
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
 
-app.use('/api/1.0/', blogsRouter)
+app.use('/api/1.0/', modelRouter)
 
 module.exports = app

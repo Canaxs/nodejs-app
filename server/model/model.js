@@ -10,7 +10,7 @@ const blogSchema = new mongoose.Schema({
   tag: {
     type: String,
   },
-},{collection:'kullanici'})
+},{collection:'blog'})
 
 blogSchema.set('toJSON', {
   transform: (document, returnedObject) => {
@@ -20,4 +20,4 @@ blogSchema.set('toJSON', {
   },
 })
 
-module.exports = mongoose.model('Blog', blogSchema)
+module.exports = mongoose.model('Model', blogSchema)
