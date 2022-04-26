@@ -10,7 +10,7 @@ const blogSchema = new mongoose.Schema({
   tag: {
     type: String,
   },
-})
+},{collection:'kullanici'})
 
 blogSchema.set('toJSON', {
   transform: (document, returnedObject) => {
