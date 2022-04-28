@@ -37,6 +37,7 @@ const Controlls = () => {
     const OnClickButton = () => {
         try {
             postBlog(body);
+            alert("Başarıyla oluşturuldu: "+body.title);
         }
         catch {
         }
@@ -45,6 +46,7 @@ const Controlls = () => {
     const onClickSmall = (id) => {
         try {
             deleteBlog(id);
+            alert("İd: "+id+"Başarıyla Silindi");
             Blogrefresh();
         }
         catch{}
