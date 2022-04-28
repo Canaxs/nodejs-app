@@ -2,10 +2,9 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <div>
-            <nav className="navbar navbar-light bg-dark fixed-top">
+            <nav className="navbar navbar-light bg-dark">
                 <div className="container-fluid">
-                    <a className="navbar-brand text-white" href="#">Blog</a>
+                    <a className="navbar-brand text-white" href="/">Blog</a>
                     <button className="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -30,7 +29,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-        </div>
     )
 }
 

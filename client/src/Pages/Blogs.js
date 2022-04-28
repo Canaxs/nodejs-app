@@ -19,8 +19,8 @@ const Blogs = () => {
   return (
     <div>
         <Navbar/>
-        {blog && blog.map(e =>(
-             <BlogCard title={e.title} text={e.text} tag={e.tag}/>
+        {blog && blog.map((e)=>(
+             <BlogCard key={e.id} title={e.title} text={e.text} tag={e.tag} />
         ))}
     </div>
   )
