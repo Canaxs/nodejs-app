@@ -19,3 +19,7 @@ module.exports.delete = async function(id,request,response) {
     return await model.findByIdAndRemove(id)
 }
 
+module.exports.update = async function(id,body,request,response) {
+    return await model.findByIdAndUpdate(id,body,{ new: true })
+}
+
